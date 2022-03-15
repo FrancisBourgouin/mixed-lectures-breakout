@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Semantic!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      header {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+      }
+
+      header h1,
+      nav {
+        display: inline;
+      }
+
+      h1 {
+        color: #bada55;
+      }
+
+      main h1 {
+        color: #c0ffee;
+      }
+      article {
+        box-sizing: border-box;
+        /* min-height: 300px; */
+
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 30px;
+
+        padding: 10px; /* All sides */
+        padding: 10px 20px; /* Top/Bottom - Left/Right */
+        padding: 10px 20px 10px; /* Top - Left/Right - Bottom */
+        padding: 10px 20px 10px 20px; /* Top - Right - Bottom - Left */
+
+        padding: 20px; /* All sides */
+        margin: 20px 0;
+        border: 2px dotted #b0b;
+      }
+      article h1 {
+        color: #b0b;
+      }
+      article:first-of-type {
+        font-size: 1em;
+      }
+
+      /* article:nth-of-type(2n) {
+        background: #55aa99;
+      } */
+
+      article:nth-of-type(n + 4) {
+        background: #55aa99;
+      }
+
+      /* article:hover {
+        font-size: 30px;
+      } */
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Super website</h1>
+      <nav>
+        <a href="">Link</a>
+        <a href="">Link</a>
+        <a href="">Link</a>
+        <a href="">Link</a>
+      </nav>
+    </header>
+    <main>
+      <h1>Some content</h1>
+      <section>
+        <article>
+          <h1>Some Post</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, distinctio
+            earum. Voluptas necessitatibus, assumenda fugiat tempora eveniet molestias
+            sint dolores id atque nulla repellat iure dolor deserunt veniam dignissimos
+            pariatur!
+          </p>
+        </article>
+        <article>
+          <h1>Some Post</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, distinctio
+            earum. Voluptas necessitatibus, assumenda fugiat tempora eveniet molestias
+            sint dolores id atque nulla repellat iure dolor deserunt veniam dignissimos
+            pariatur!
+          </p>
+        </article>
+        <article>
+          <h1>Some Post</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, distinctio
+            earum. Voluptas necessitatibus, assumenda fugiat tempora eveniet molestias
+            sint dolores id atque nulla repellat iure dolor deserunt veniam dignissimos
+            pariatur!
+          </p>
+        </article>
+        <article>
+          <h1>Some Post</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, distinctio
+            earum. Voluptas necessitatibus, assumenda fugiat tempora eveniet molestias
+            sint dolores id atque nulla repellat iure dolor deserunt veniam dignissimos
+            pariatur!
+          </p>
+        </article>
+        <article>
+          <h1>Some Post</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, distinctio
+            earum. Voluptas necessitatibus, assumenda fugiat tempora eveniet molestias
+            sint dolores id atque nulla repellat iure dolor deserunt veniam dignissimos
+            pariatur!
+          </p>
+        </article>
+        <article>
+          <h1>Some Post</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, distinctio
+            earum. Voluptas necessitatibus, assumenda fugiat tempora eveniet molestias
+            sint dolores id atque nulla repellat iure dolor deserunt veniam dignissimos
+            pariatur!
+          </p>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

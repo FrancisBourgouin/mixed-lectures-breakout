@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>CSS Selectors</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/css_selectors.css" />
+    <style>
+      /* CSS Classes ? Great */
+      /* CSS Ids (only once per name) ? Bad! */
+
+      /* Should CSS serve HTML or HTML should serve CSS */
+
+      h1.article_title {
+        color: green;
+        margin: 0;
+        padding: 0;
+
+        font-size: 16px;
+        font-weight: 900;
+      }
+      main > h1 {
+        /* main h1 { */
+        color: red;
+      }
+
+      main section article h1 {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Super website</h1>
+      <nav>
+        <a href="">Link</a>
+        <a href="">Link</a>
+        <a href="">Link</a>
+        <a href="">Link</a>
+      </nav>
+    </header>
+    <main>
+      <h1>Some content</h1>
+      <section>
+        <article>
+          <h1 class="article_title">Some Post</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, distinctio
+            earum. Voluptas necessitatibus, assumenda fugiat tempora eveniet molestias
+            sint dolores id atque nulla repellat iure dolor deserunt veniam dignissimos
+            pariatur!
+          </p>
+        </article>
+        <article>
+          <h1>Some Post</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, distinctio
+            earum. Voluptas necessitatibus, assumenda fugiat tempora eveniet molestias
+            sint dolores id atque nulla repellat iure dolor deserunt veniam dignissimos
+            pariatur!
+          </p>
+        </article>
+        <article>
+          <h1>Some Post</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, distinctio
+            earum. Voluptas necessitatibus, assumenda fugiat tempora eveniet molestias
+            sint dolores id atque nulla repellat iure dolor deserunt veniam dignissimos
+            pariatur!
+          </p>
+        </article>
+        <article>
+          <h1>Some Post</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, distinctio
+            earum. Voluptas necessitatibus, assumenda fugiat tempora eveniet molestias
+            sint dolores id atque nulla repellat iure dolor deserunt veniam dignissimos
+            pariatur!
+          </p>
+        </article>
+        <article>
+          <h1>Some Post</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, distinctio
+            earum. Voluptas necessitatibus, assumenda fugiat tempora eveniet molestias
+            sint dolores id atque nulla repellat iure dolor deserunt veniam dignissimos
+            pariatur!
+          </p>
+        </article>
+        <article>
+          <h1>Some Post</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, distinctio
+            earum. Voluptas necessitatibus, assumenda fugiat tempora eveniet molestias
+            sint dolores id atque nulla repellat iure dolor deserunt veniam dignissimos
+            pariatur!
+          </p>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
