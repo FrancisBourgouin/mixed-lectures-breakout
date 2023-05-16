@@ -1,0 +1,31 @@
+html,
+body {
+  margin: 1em;
+  padding: 0;
+}
+
+body {
+  font-family: "Helvetica";
+}
+
+footer {
+  text-align: center;
+}
+
+footer > button {
+  margin: 2em;
+}
+
+form {
+  width: 100%;
+  max-width: 40vw;
+
+  padding: 1em;
+  margin: 0 auto;
+
+  border: 2px dotted green;
+
+  display: flex;
+  gap: 1em;
+  flex-direction: column;
+}
