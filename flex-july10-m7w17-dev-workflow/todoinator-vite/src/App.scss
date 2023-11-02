@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+.TodoList {
+  padding: 1em;
+}
+
+.TodoListItem {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+
+  p {
+    border: 0.25em solid white;
+    padding: 1em;
+
+    &:first-of-type {
+      min-width: 50ch;
+    }
+  }
+  button {
+    padding: 1.75em;
+    cursor: pointer;
+  }
+}
+
+.TodoForm {
+  display: flex;
+  // align-items: center;
+  gap: 1em;
+
+  input,
+  select,
+  button {
+    font-size: 1em;
+    padding: 1em;
+  }
+}
