@@ -1,0 +1,26 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+body {
+  text-align: center;
+}
+
+.Header {
+  background-color: #b0b;
+  padding: 1em;
+}
+
+.Results {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #bada55;
+  margin: 1em;
+  padding: 1em;
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+}
