@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>List of all users</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <header>
+      <h1>Hello to all the users!</h1>
+    </header>
+    <main>
+      <h1>This is your info:</h1>
+
+      <% for(const id in users){ %>
+      <ul>
+        <li>Name: <%= users[id].name %></li>
+        <li>Email: <%= users[id].email %></li>
+      </ul>
+      <% } %>
+    </main>
+  </body>
+</html>
