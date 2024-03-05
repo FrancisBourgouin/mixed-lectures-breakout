@@ -1,0 +1,15 @@
+<section class="navigation">
+  <h1>
+    <span>Super secret thief page !</span>
+  </h1>
+
+  <% if(!thief && url !== "/register"){ %>
+  <a href="/register">REGISTER</a>
+  <% } %> <% if(thief){ %>
+  <form action="/logout" method="POST">
+    <button>LOGOUT</button>
+  </form>
+  <% } %> <% if(!thief && url === "/register"){ %>
+  <a href="/">LOGIN</a>
+  <% } %>
+</section>
