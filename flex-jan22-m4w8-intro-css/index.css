@@ -1,0 +1,22 @@
+/* Cascading Style Sheet */
+
+body {
+  background-color: #c0ffee;
+}
+
+/* Denote a class identifier by starting with . */
+/* .header => class header */
+/* #post-1 => id post-1 */
+
+div.header,
+div.post {
+  background-color: #bada55;
+  margin: 50px;
+}
+
+div.alert {
+  background-color: red;
+}
+p.alert {
+  color: red;
+}

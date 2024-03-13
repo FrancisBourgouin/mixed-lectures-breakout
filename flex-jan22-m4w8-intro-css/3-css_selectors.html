@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>CSS Selectors</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <style>
+    h1 {
+      text-transform: uppercase;
+      color: red;
+    }
+
+    body header h1 {
+      color: orange;
+    }
+
+    header h1 {
+      color: #b0b;
+    }
+    header.title h1 {
+      color: green;
+    }
+
+    /* 
+    When we use a space between elements, it means all the
+    descendants of that parent element
+     */
+
+    section > h1 {
+      color: #bada55;
+    }
+    /* Direct descendant can be targeted with the > symbol */
+
+    h1 {
+      color: blue;
+    }
+
+    /* CSS SPECIFITY
+    1- amount elements (section, h1, ...)
+    2- class names
+    3- ids
+    
+    */
+
+    section article:last-of-type {
+      background: yellow;
+    }
+  </style>
+  <body>
+    <header class="title">
+      <h1>Super website of destiny!</h1>
+    </header>
+    <main>
+      <section>
+        <h1>Top news!</h1>
+        <article>
+          <h1>Article 1</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ratione debitis
+            velit aut enim id minima, quis placeat explicabo minus eaque, magnam quos quas
+            numquam aperiam voluptatum, assumenda ut dolor.
+          </p>
+        </article>
+        <article>
+          <h1>Article 2</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ratione debitis
+            velit aut enim id minima, quis placeat explicabo minus eaque, magnam quos quas
+            numquam aperiam voluptatum, assumenda ut dolor.
+          </p>
+        </article>
+        <article>
+          <h1>Article 3</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ratione debitis
+            velit aut enim id minima, quis placeat explicabo minus eaque, magnam quos quas
+            numquam aperiam voluptatum, assumenda ut dolor.
+          </p>
+        </article>
+        <p>End of section</p>
+      </section>
+      <section class="bottom-news">
+        <h1>Bottom news!</h1>
+        <article>
+          <h1>Article 1</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ratione debitis
+            velit aut enim id minima, quis placeat explicabo minus eaque, magnam quos quas
+            numquam aperiam voluptatum, assumenda ut dolor.
+          </p>
+        </article>
+        <article>
+          <h1>Article 2</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ratione debitis
+            velit aut enim id minima, quis placeat explicabo minus eaque, magnam quos quas
+            numquam aperiam voluptatum, assumenda ut dolor.
+          </p>
+        </article>
+        <article>
+          <h1>Article 3</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ratione debitis
+            velit aut enim id minima, quis placeat explicabo minus eaque, magnam quos quas
+            numquam aperiam voluptatum, assumenda ut dolor.
+          </p>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
