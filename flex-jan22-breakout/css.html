@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body section:first-of-type {
+        margin: 1em auto;
+        max-width: 1280px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1em;
+      }
+
+      article {
+        width: 45%;
+        border: 0.2em solid #b0b;
+        padding: 1em;
+        transition: all 300ms linear;
+      }
+
+      article:hover {
+        box-shadow: #b0b 3em 1em;
+        background-color: bisque;
+        cursor: pointer;
+      }
+
+      article h1 {
+        display: inline-block;
+        transition: all 900ms ease-in-out;
+      }
+      article:hover h1 {
+        position: relative;
+        transform: rotate(720deg);
+        transform-origin: 0 5em;
+        font-weight: 300;
+        color: blue;
+      }
+
+      button {
+        font-size: 2em;
+        padding: 0.5em 1em;
+        border-radius: 0.25em;
+      }
+
+      header {
+        /* font-size: 0.5em; */
+        height: 70vh;
+        max-height: 700px;
+        background-image: url(https://images.unsplash.com/photo-1596910547037-846b1980329f?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+        background-size: cover;
+        background-position: center;
+      }
+
+      header nav {
+        box-sizing: border-box;
+        position: fixed;
+        width: 100%;
+        padding: 1em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #c0ffee;
+
+        /* filter: opacity(50%); */
+        background-color: rgba(100, 40, 100, 100%);
+        transition: 500ms linear;
+      }
+
+      .scrolled-enough {
+        background-color: rgba(240, 240, 100, 50%);
+      }
+    </style>
+    <script>
+      // $(document).on("scroll", () => {
+      //   $("header nav").addClass(...)
+      //   $("header nav").addClass(...)
+      // })
+
+      document.addEventListener("scroll", (event) => {
+        const amountOfScroll = document.querySelector("html").scrollTop;
+        console.log("hello?", amountOfScroll);
+
+        if (amountOfScroll > 200) {
+          document.querySelector("header nav").classList.add("scrolled-enough");
+        } else {
+          document.querySelector("header nav").classList.remove("scrolled-enough");
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1>SUPER WEBSITE!</h1>
+        <ul>
+          <li>Write</li>
+          <li>Login</li>
+        </ul>
+      </nav>
+      <!-- <button>Beautiful</button> -->
+    </header>
+    <section>
+      <article>
+        <h1>Some title</h1>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo doloribus eius
+          quod voluptas saepe sapiente delectus architecto magnam cupiditate explicabo!
+          Beatae rerum magnam ipsa vitae. Fugiat voluptatum corporis minus neque?
+        </p>
+      </article>
+      <article>
+        <h1>Some title</h1>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo doloribus eius
+          quod voluptas saepe sapiente delectus architecto magnam cupiditate explicabo!
+          Beatae rerum magnam ipsa vitae. Fugiat voluptatum corporis minus neque?
+        </p>
+      </article>
+      <article>
+        <h1>Some title</h1>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo doloribus eius
+          quod voluptas saepe sapiente delectus architecto magnam cupiditate explicabo!
+          Beatae rerum magnam ipsa vitae. Fugiat voluptatum corporis minus neque?
+        </p>
+      </article>
+      <article>
+        <h1>Some title</h1>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo doloribus eius
+          quod voluptas saepe sapiente delectus architecto magnam cupiditate explicabo!
+          Beatae rerum magnam ipsa vitae. Fugiat voluptatum corporis minus neque?
+        </p>
+      </article>
+      <article>
+        <h1>Some title</h1>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo doloribus eius
+          quod voluptas saepe sapiente delectus architecto magnam cupiditate explicabo!
+          Beatae rerum magnam ipsa vitae. Fugiat voluptatum corporis minus neque?
+        </p>
+      </article>
+      <article>
+        <h1>Some title</h1>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo doloribus eius
+          quod voluptas saepe sapiente delectus architecto magnam cupiditate explicabo!
+          Beatae rerum magnam ipsa vitae. Fugiat voluptatum corporis minus neque?
+        </p>
+      </article>
+    </section>
+    <button>Beautiful</button>
+  </body>
+</html>
