@@ -1,0 +1,4 @@
+NextJS
+Vite
+CRA
+PARTAY!
