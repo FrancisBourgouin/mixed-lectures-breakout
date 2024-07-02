@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>CSS Selectors</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <style>
+    body {
+      background: #333;
+      color: #fff;
+      font-size: 30px;
+    }
+
+    h1{ /* Target all the h1 */
+      text-decoration: underline;
+    }
+
+    section h1{ /* All the h1 that are inside a section */
+      color:#bada55;
+    }
+
+    section > h1{ /* All the h1 that are direct descendants (children) of the section */
+      letter-spacing: 0.5em;
+    }
+
+    .sponsored{
+      background-color: rgb(233, 161, 6);
+      color:black;
+    }
+    .sponsored h1{
+      color:black;
+    }
+
+    article{
+      background-color: #bada55;
+    }
+
+    article{      
+      padding:1em;
+      background-color: #330b82;
+    }
+
+    header h1,
+    article h1 {
+      font-weight:300;
+    }
+
+    /* Tag name lvl 1 */
+    /* Class name lvl 2 */
+    /* Id name lvl 3 */
+    /* Inline lvl 4 */
+    /* Important DONT USE IMPORTANT ITS EVILLLL lvl 5 */
+    
+  </style>
+  <body>
+    <header class="title">
+      <h1>Super website of destiny!</h1>
+    </header>
+    <main>
+      <section>
+        <h1>Top news!</h1>
+        <article>
+          <h1>Article 1</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ratione debitis
+            velit aut enim id minima, quis placeat explicabo minus eaque, magnam quos quas
+            numquam aperiam voluptatum, assumenda ut dolor.
+          </p>
+        </article>
+        <article class="sponsored">
+          <h1>Article 2</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ratione debitis
+            velit aut enim id minima, quis placeat explicabo minus eaque, magnam quos quas
+            numquam aperiam voluptatum, assumenda ut dolor.
+          </p>
+        </article>
+        <article>
+          <h1>Article 3</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ratione debitis
+            velit aut enim id minima, quis placeat explicabo minus eaque, magnam quos quas
+            numquam aperiam voluptatum, assumenda ut dolor.
+          </p>
+        </article>
+        <p>End of section</p>
+      </section>
+    </main>
+  </body>
+</html>

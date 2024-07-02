@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Flex!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <style>
+    body {
+      background: #333;
+      color: #fff;
+      font-size: 30px;
+    }
+
+    header {
+      padding: 1em;
+      background-color: #043bab;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 1em;
+    }
+
+    header a {
+      color: #fff;
+    }
+
+    header h2 {
+      margin-left: auto;
+    }
+
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 1em;
+      justify-content: space-between;
+    }
+
+    article {
+      box-sizing: border-box;
+      width: 45%;
+      display: flex;
+      flex-direction: column;
+      border: 0.25em solid white;
+      margin:1em;
+      padding:1em;
+      border-radius: 0.25em;
+    }
+
+    article:nth-of-type(2n) {
+      /* 2n + 1 => 0 + 1, 2+1, 4+1, ...*/
+      flex-direction: column-reverse;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  </style>
+  <body>
+    <header>
+      <h1>Magical Flex!</h1>
+      <a href="#">HOME</a>
+      <a href="#">POTATOES</a>
+      <a href="#">COFFEE</a>
+      <a href="#">POLLO</a>
+      <h2>Making devs happy since '12</h2>
+    </header>
+    <main>
+      <article>
+        <img
+          src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt=""
+        />
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur tempore
+          recusandae nemo provident ipsum optio nobis, dolor dolore, iure iste magni nulla
+          autem reprehenderit exercitationem veritatis quaerat obcaecati omnis. Illo?
+        </p>
+      </article>
+      <article>
+        <img
+          src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt=""
+        />
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur tempore
+          recusandae nemo provident ipsum optio nobis, dolor dolore, iure iste magni nulla
+          autem reprehenderit exercitationem veritatis quaerat obcaecati omnis. Illo?
+        </p>
+      </article>
+      <article>
+        <img
+          src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt=""
+        />
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur tempore
+          recusandae nemo provident ipsum optio nobis, dolor dolore, iure iste magni nulla
+          autem reprehenderit exercitationem veritatis quaerat obcaecati omnis. Illo?
+        </p>
+      </article>
+      <article>
+        <img
+          src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt=""
+        />
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur tempore
+          recusandae nemo provident ipsum optio nobis, dolor dolore, iure iste magni nulla
+          autem reprehenderit exercitationem veritatis quaerat obcaecati omnis. Illo?
+        </p>
+      </article>
+    </main>
+  </body>
+</html>

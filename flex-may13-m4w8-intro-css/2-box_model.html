@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Box Model</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      background: #333;
+      color: #fff;
+      font-size: 50px;
+    }
+
+    /* Margin */
+    /* Padding */
+
+    /* content-box */
+    /* border-box */
+
+    /* Block */
+    /* Inline-block */
+    /* Inline */
+
+    .shipping-box {
+      width: 250px;
+      height: 250px;
+      box-sizing: border-box;
+      display: inline-block;
+      background-color: red;
+      margin: 2em;
+      padding: 1em;
+      border: 1em solid orange;
+    }
+
+    header {
+      padding: 1em;
+      background-color: rgb(255,0,255);
+    }
+
+    h1 {
+      margin: 0;
+      color: #15a3e5;
+      text-align: center;
+    }
+  </style>
+
+  <body>
+    <header>
+      <h1>SUPER TITLE OF DESTINY!</h1>
+    </header>
+    <main>
+      <section>
+        <div class="shipping-box">☕</div>
+        <div class="shipping-box">☕</div>
+        <div class="shipping-box">☕</div>
+      </section>
+      <section>
+        <h1>Hexadecimal & RGB!</h1>
+        <ul>
+          <li>RGB => Red / Green / Blue</li>
+          <li>8bit =>Each color channel => 0-255</li>
+          <li>Base 10, Base 16</li>
+          <li>14 => 1x10 + 4x1 => 1x10^1 + 4x10^0</li>
+          <li>0,1,2,3,4,5,6,7,8,9</li>
+          <li>For hexadecimal</li>
+          <li>0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F</li>
+          <li>14 => 1x16^1 + 4x16^0</li>
+          <li>FF => 15x16 + 15x1 => 255</li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
