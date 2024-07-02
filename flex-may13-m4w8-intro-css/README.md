@@ -12,6 +12,7 @@
 - Float
 - Flexbox
 
+
 ## Approach
 
 As the weeks progress there is lesser emphasis on giving you all the resources, functions, tips that you need to complete an activity. We expect from you to:
